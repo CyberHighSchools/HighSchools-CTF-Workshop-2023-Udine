@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  spider:
+    build:
+      context: src
+      args:
+        FLAG_1: "flag{s3mbr1_"
+        FLAG_2: "un0_sp1d3R}"
+    ports:
+      - "3000:80"
+    restart: unless-stopped

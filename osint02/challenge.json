@@ -1,0 +1,23 @@
+{
+  "title": "A Spy Story - 2",
+  "description": "Qualcuno aveva veramente ottenuto accesso al nostro DNS! Hai trovato altre informazioni?\n\n**NOTA: \u00e8 fortemente consigliato completare le challenge in ordine!**",
+  "authors": [
+    "Alessandro Zanatta <@kalex>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 42,
+  "flags": [
+    "^flag\\{found_a_mail:gianfrancoportafoglio@gmail\\.com_a_spy_story_2\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

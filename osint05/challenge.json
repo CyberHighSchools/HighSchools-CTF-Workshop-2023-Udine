@@ -1,0 +1,26 @@
+{
+  "title": "A Spy Story - 5",
+  "description": "Ci siamo quasi! La foto lasciata su Twitter dovrebbe essere sufficiente a geolocalizzarlo.\nSappiamo anche che non pu\u00f2 essere andato troppo lontano!\n\n**NOTA: il formato della flag \u00e8: flag{nome_del_posto_mostrato_nella_foto}**\n\n**NOTA: \u00e8 fortemente consigliato completare le challenge in ordine!**",
+  "authors": [
+    "Alessandro Zanatta <@kalex>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 45,
+  "flags": [
+    "^flag\\{porta_san_genesio\\}$",
+    "^flag\\{san_genesio\\}$",
+    "^flag\\{porta_San_Genesio\\}$",
+    "^flag\\{San_Genesio\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

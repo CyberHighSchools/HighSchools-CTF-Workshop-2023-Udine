@@ -1,0 +1,33 @@
+{
+  "title": "Round di permutazioni",
+  "description": "Forse avrei dovuto aggiungere qualche altra operazione oltre alla permutazione...\n\nQuesta \u00e8 una challenge remota. Collegati al seguento sito web:\n[http://permutation.challs.cyberhighschools.it](http://permutation.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 13,
+  "flags": [
+    "^flag\\{p3rmut4r3_n0n_e_4bb4st4nz4\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://permutation.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

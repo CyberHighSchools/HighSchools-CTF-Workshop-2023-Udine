@@ -1,0 +1,30 @@
+{
+  "title": "Dominio Non Sospetto",
+  "description": "Stavo guardando qualche tutorial di hacking su Youtube quando ho scoperto che qualcuno ha esfiltrato la mia bandiera!\n\nPer me \u00e8 stato qualcuno dei MadrHacks mentre stava organizzando una ctf. Puoi recuperarla?",
+  "authors": [
+    "Matteo Paier <@MatteoPaier>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 34,
+  "flags": [
+    "^flag\\{ecco_un_esfiltrazione_dns\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "dominio_non_sospetto.pcap",
+      "type": "upload",
+      "path": "./attachments/dominio_non_sospetto.pcap",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

@@ -1,0 +1,23 @@
+{
+  "title": "A Spy Story - 6",
+  "description": "L'abbiamo trovato!\n\nOrmai dobbiamo solo scoprire i suoi segreti! Qualcosa non torna per\u00f2, la foto avrebbe dovuto darci tutte le risposte che cercavamo... ci siamo persi qualcosa?\n\n**NOTA: \u00e8 fortemente consigliato completare le challenge in ordine!**",
+  "authors": [
+    "Alessandro Zanatta <@kalex>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 46,
+  "flags": [
+    "^flag\\{super_duper_important_data_exfiltrated_from_madrhacks\\.org_here\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

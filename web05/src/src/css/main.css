@@ -1,0 +1,25 @@
+.cats {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 30px;
+}
+
+img {
+    height: 300px;
+    padding: 10px;
+    display: inline-block;
+}
+
+body {
+    background-color: #fddddd;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 25;
+    text-align: center;
+}

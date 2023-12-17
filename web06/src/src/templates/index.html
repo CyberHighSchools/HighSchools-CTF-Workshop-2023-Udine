@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Benvenuto</title>
+    <link rel="stylesheet" href="/static/css/forms.css">
+</head>
+
+<body>
+    <div class="card">
+        {% if user != None %}
+        <a class="box" href="/account">Vai al tuo account</a>
+        {% endif %}
+        <a class="box" href="/login">Accedi</a>
+        <a class="box" href="/register">Registrati</a>
+    </div>
+</body>
+
+</html>

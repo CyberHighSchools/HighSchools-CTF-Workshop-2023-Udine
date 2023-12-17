@@ -1,0 +1,43 @@
+{
+  "title": "Baked",
+  "description": "Scegli il tuo tema preferito!\n\nSite: [http://baked.challs.cyberhighschools.it](http://baked.challs.cyberhighschools.it)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "cookies",
+    "xor"
+  ],
+  "order": 23,
+  "flags": [
+    "^flag\\{i_s3gret1_n0n_son0_p3r_s3mpr3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "index.php",
+      "type": "upload",
+      "path": "./attachments/index.php",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://baked.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

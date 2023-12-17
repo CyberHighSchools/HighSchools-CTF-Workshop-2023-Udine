@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mailserver:
+    image: antespi/docker-imap-devel:latest
+    environment:
+      MAILNAME: test.paier.xyz
+      MAIL_PASS: password
+      MAIL_ADDRESS: user@test.paier.xyz
+    restart: unless-stopped
+  sender:
+    build: .
+    volumes:
+      - ./out:/out

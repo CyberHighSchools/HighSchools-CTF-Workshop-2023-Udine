@@ -1,0 +1,36 @@
+{
+  "title": "Spider",
+  "description": "Riuscirai a trovare i miei segreti?\n\nLa flag \u00e8 divisa in due parti, dovrai trovarle e concatenarle per ottenere la flag.\n\nSite: [http://spider.challs.cyberhighschools.it](http://spider.challs.cyberhighschools.it)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "order": 21,
+  "flags": [
+    "^flag\\{s3mbr1_un0_sp1d3R\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://spider.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

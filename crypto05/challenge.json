@@ -1,0 +1,33 @@
+{
+  "title": "Condividere segreti con parabole, \u00e8 possibile?",
+  "description": "Condividere segreti tra pi\u00f9 persone in modo sicuro \u00e8 sempre stato uno dei temi di ricerca fondamentali. \nQuesto, forse, non \u00e8 cos\u00ec sicuro, ma ti introduce ad altri sistemi concettualmente molto simili. L'importante \u00e8 gettare le fondamenta. \n\nQuesta \u00e8 una challege remota. Collegati al seguente sito web:\n[http://parabolic.challs.cyberhighschools.it](http://parabolic.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 15,
+  "flags": [
+    "^flag\\{3_punt1_d3fin1sc0n0_un4_s0l4_3qu4z1on3_di_s3c0nd0_gr4d0\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://parabolic.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

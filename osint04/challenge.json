@@ -1,0 +1,23 @@
+{
+  "title": "A Spy Story - 4",
+  "description": "Abbiamo trovato lo username! Sappiamo che usa X/Twitter, andiamo a scovarlo!\n\n**NOTA: \u00e8 fortemente consigliato completare le challenge in ordine!**",
+  "authors": [
+    "Alessandro Zanatta <@kalex>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 44,
+  "flags": [
+    "^flag\\{gianfrancopf23_because_gianfrancoportafoglio_is_too_long_a_spy_story_4\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

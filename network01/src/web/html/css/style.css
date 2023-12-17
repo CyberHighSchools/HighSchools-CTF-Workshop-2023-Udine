@@ -1,0 +1,26 @@
+.content {
+    width: 62%;
+    margin: 0 auto;
+}
+
+.fineprint {
+    font-size: 0.4rem;
+    color: #999;
+}
+
+.flag-holder {
+  display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag img {
+    width: 10rem;
+}

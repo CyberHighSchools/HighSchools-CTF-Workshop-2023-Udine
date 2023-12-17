@@ -1,0 +1,36 @@
+{
+  "title": "Not a login",
+  "description": "Come non fare un login.\n\nSite: [http://notalogin.challs.cyberhighschools.it](http://notalogin.challs.cyberhighschools.it)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "javascript",
+    "client-side-authentication"
+  ],
+  "order": 22,
+  "flags": [
+    "^flag\\{aut3nticazione_l4t0_cl1ent\\?\\?\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://notalogin.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

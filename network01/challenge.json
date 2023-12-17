@@ -1,0 +1,30 @@
+{
+  "title": "Negozio Segreto - lvl 1",
+  "description": "Qualcuno ha trovato il nostro segretissimo negozio online di flag! Fortunatamente abbiamo catturato tutto il traffico rilevante.\n\nPuoi aiutarci a capire cosa hanno trovato?\n\nDa quel che ricordo una delle nostre flag sembrava diversa dalle altre.",
+  "authors": [
+    "Matteo Paier <@MatteoPaier>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 31,
+  "flags": [
+    "^flag\\{addio_e_grazie_per_tutto_l_esporta_oggetti\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "negozio_segreto.pcap",
+      "type": "upload",
+      "path": "./attachments/negozio_segreto.pcap",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

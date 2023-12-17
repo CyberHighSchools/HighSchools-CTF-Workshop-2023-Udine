@@ -1,0 +1,23 @@
+{
+  "title": "A Spy Story - 3",
+  "description": "Bene, abbiamo recuperato la sua email personale!\n\nDobbiamo scavare pi\u00f9 a fondo per\u00f2, ci servono altre informazioni... Che magari abbia copia-incollato da qualche parte i suoi dati?\n\n**NOTA: \u00e8 fortemente consigliato completare le challenge in ordine!**",
+  "authors": [
+    "Alessandro Zanatta <@kalex>"
+  ],
+  "tags": [
+    "osint"
+  ],
+  "hiddenTags": [],
+  "order": 43,
+  "flags": [
+    "^flag\\{paste_here_paste_there_ooops_that_is_not_private_a_spy_story_3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

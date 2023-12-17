@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  chall:
+    build: .
+    ports:
+      - "30001:5001"
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{f4tt0r1zz4z10n3_p0l1n0mi4l3}

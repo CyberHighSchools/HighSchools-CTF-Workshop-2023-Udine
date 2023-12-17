@@ -1,0 +1,33 @@
+{
+  "title": "Fattorizzazione polinomiale",
+  "description": "Alla base di molti cifrari sicuri c'\u00e8 uno dei problemi fondamentali nel mondo della crittografia... la fattorizzazione.\n\nQuesta \u00e8 una challenge remota. Collegati al seguente sito web:\n[http://factorization.challs.cyberhighschools.it](http://factorization.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 12,
+  "flags": [
+    "^flag\\{f4tt0r1zz4z10n3_p0l1n0mi4l3\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://factorization.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

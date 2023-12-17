@@ -1,0 +1,26 @@
+services:
+  notes:
+    build:
+      context: src
+    # flask requires SIGINT to stop gracefully
+    # (default stop signal from Compose is SIGTERM)
+    stop_signal: SIGINT
+    environment:
+      DATABASE_HOST: "notes-database"
+      DATABASE_PORT: 3306
+      DATABASE_USER: "app"
+      DATABASE_PASSWORD: "EPxdlXxXYyeHJg1nXV35pP1905BEIE"
+      DATABASE_DB: "challenge"
+      SECRET_KEY: "dWaMzIsQ1cGUD79LiBelGVCbtKL4E9"
+    ports:
+      - '3005:3000'
+    restart: unless-stopped
+    depends_on:
+      - notes-database
+  notes-database:
+    image: mariadb:11
+    restart: unless-stopped
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d
+    environment:
+      - "MYSQL_RANDOM_ROOT_PASSWORD=yes"

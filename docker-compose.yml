@@ -1,0 +1,242 @@
+services:
+  # Crypto 01
+  crypto01:
+    build: ./crypto01/src
+    #ports:
+    #  - "8000:8000"
+    privileged: false
+    restart: unless-stopped
+    environment:
+      - FLAG=flag{CESAREUSAVAUNCIFRARIOSIMILE}
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto01.entrypoints=web"
+      - "traefik.http.routers.crypto01.rule=Host(`caesar.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto01.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Crypto 02
+  crypto02:
+    build: ./crypto02/src
+    #ports:
+    #  - "8000:8000"
+    environment:
+      - FLAG=flag{f4tt0r1zz4z10n3_p0l1n0mi4l3}
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto02.entrypoints=web"
+      - "traefik.http.routers.crypto02.rule=Host(`factorization.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto02.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Crypto 03
+  crypto03:
+    build: ./crypto03/src
+    #ports:
+    #  - "8000:8000"
+    environment:
+      - FLAG=flag{p3rmut4r3_n0n_e_4bb4st4nz4}
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto03.entrypoints=web"
+      - "traefik.http.routers.crypto03.rule=Host(`permutation.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto03.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Crypto 04
+  crypto04:
+    build: ./crypto04/src
+    #ports:
+    #  - "8000:8000"
+    environment:
+      - FLAG=flag{s3mpl1c3_m4t3m4t1c4}
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto04.entrypoints=web"
+      - "traefik.http.routers.crypto04.rule=Host(`lcg.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto04.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Crypto 05
+  crypto05:
+    build: ./crypto05/src
+    #ports:
+    #  - "8000:8000"
+    environment:
+      - FLAG=flag{3_punt1_d3fin1sc0n0_un4_s0l4_3qu4z1on3_di_s3c0nd0_gr4d0}
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto05.entrypoints=web"
+      - "traefik.http.routers.crypto05.rule=Host(`parabolic.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto05.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Crypto 06
+  crypto06:
+    build: ./crypto06/src
+    #ports:
+    #  - "8000:8000"
+    environment:
+      - FLAG=flag{qu3st0_0r4c0l0_c1_d4_m0lti_sugg3r1m3nti}
+      - FLASK_ENV=production
+      - FLASK_APP=app
+      - GUNICORN_WORKERS # default: 4
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.crypto06.entrypoints=web"
+      - "traefik.http.routers.crypto06.rule=Host(`xororacle.challs.cyberhighschools.it`)"
+      - "traefik.http.services.crypto06.loadbalancer.server.port=5001"
+    networks:
+      - web
+
+  # Web 01
+  web01:
+    build:
+      context: ./web01/src/src
+      args:
+        FLAG_1: "flag{s3mbr1_"
+        FLAG_2: "un0_sp1d3R}"
+    #ports:
+    #  - "80:80"
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.web01.entrypoints=web"
+      - "traefik.http.routers.web01.rule=Host(`spider.challs.cyberhighschools.it`)"
+      - "traefik.http.services.web01.loadbalancer.server.port=80"
+    networks:
+      - web
+
+  # Web 02
+  web02:
+    build: ./web02/src/src
+    environment:
+      FLAG: "flag{aut3nticazione_l4t0_cl1ent??}"
+      ADMIN_USERNAME: "admin"
+      ADMIN_PASSWORD: "unguessable_password_123"
+    #ports:
+    #  - "80:80"
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.web02.entrypoints=web"
+      - "traefik.http.routers.web02.rule=Host(`notalogin.challs.cyberhighschools.it`)"
+      - "traefik.http.services.web02.loadbalancer.server.port=80"
+    networks:
+      - web
+
+  # Web 03
+  web03:
+    build: ./web03/src/src
+    environment:
+      FLAG: "flag{i_s3gret1_n0n_son0_p3r_s3mpr3}"
+      KEY: "SEGR3T0"
+    #ports:
+    #  - "80:80"
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.web03.entrypoints=web"
+      - "traefik.http.routers.web03.rule=Host(`baked.challs.cyberhighschools.it`)"
+      - "traefik.http.services.web03.loadbalancer.server.port=80"
+    networks:
+      - web
+
+  # Web 04
+  web04:
+    build: ./web04/src/src
+    environment:
+      - "FLAG=flag{gl1_h3ader_p0ss0no_m3ntire}"
+    ports:
+      - "37005:80"
+    privileged: false
+    restart: unless-stopped
+    networks:
+      - default
+
+  # Web 05
+  web05:
+    build:
+      context: ./web05/src/src
+      args:
+        FLAG: "flag{suf1ng_th3_fil3syst3m}"
+    #ports:
+    #  - "80:80"
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.web05.entrypoints=web"
+      - "traefik.http.routers.web05.rule=Host(`gallery.challs.cyberhighschools.it`)"
+      - "traefik.http.services.web05.loadbalancer.server.port=80"
+    networks:
+      - web
+
+  # Web 06
+  web06:
+    build: ./web06/src/src
+    stop_signal: SIGINT
+    environment:
+      DATABASE_HOST: "notes-database"
+      DATABASE_PORT: 3306
+      DATABASE_USER: "app"
+      DATABASE_PASSWORD: "EPxdlXxXYyeHJg1nXV35pP1905BEIE"
+      DATABASE_DB: "challenge"
+      SECRET_KEY: "dWaMzIsQ1cGUD79LiBelGVCbtKL4E9"
+    depends_on:
+      - notes-database
+    #ports:
+    #  - "80:80"
+    privileged: false
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.web06.entrypoints=web"
+      - "traefik.http.routers.web06.rule=Host(`notes.challs.cyberhighschools.it`)"
+      - "traefik.http.services.web06.loadbalancer.server.port=3000"
+    networks:
+      - web
+      - default
+
+  notes-database:
+    image: mariadb:11
+    restart: unless-stopped
+    volumes:
+      - ./web06/src/db/:/docker-entrypoint-initdb.d
+    environment:
+      - "MYSQL_RANDOM_ROOT_PASSWORD=yes"
+    networks:
+      - default
+
+networks:
+  web:
+    external: true

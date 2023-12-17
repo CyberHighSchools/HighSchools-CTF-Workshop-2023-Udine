@@ -1,0 +1,31 @@
+{
+  "title": "Tartaruga as a Service",
+  "description": "Ho costruito questo robot che pu\u00f2 essere spostato utilizzando HTTP. Sfortunatamente ho lasciato l'API aperta e qualcuno ha preso il controllo.\n\nBeep boop, il robot ha scritto qualcosa sul pavimento, puoi recuperarlo?\n\n_La flag non \u00e8 in formato standard. Questa challenge NON \u00e8 pensata per essere risolta a mano._",
+  "authors": [
+    "Matteo Paier <@MatteoPaier>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 36,
+  "flags": [
+    "^FLAGBEEPBOOPLATARTARUGAMORSESTAARRIVANDOSPEROTUNONLABBIARISOLTAAMANO$",
+    "^flagbeepbooplatartarugamorsestaarrivandosperotunonlabbiarisoltaamano$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "tartaruga.pcap",
+      "type": "upload",
+      "path": "./attachments/tartaruga.pcap",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

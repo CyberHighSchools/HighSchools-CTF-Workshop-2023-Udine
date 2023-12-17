@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  gallery:
+    build:
+      context: src
+      args:
+        FLAG: "flag{suf1ng_th3_fil3syst3m}"
+    ports:
+      - "3004:80"
+    restart: unless-stopped

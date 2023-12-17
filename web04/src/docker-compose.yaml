@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nearby:
+    build: src
+    ports:
+      - "3003:80"
+    restart: unless-stopped
+    environment:
+      FLAG: "flag{gl1_h3ader_p0ss0no_m3ntire}"

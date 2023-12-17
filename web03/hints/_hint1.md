@@ -1,0 +1,1 @@
+La funzione `enc` sembra faccia uno `xor`.. Cosa sai sui dati a cui è applicata?

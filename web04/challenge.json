@@ -1,0 +1,35 @@
+{
+  "title": "Nearby",
+  "description": "Ho fatto una challenge accessibile solo agli utenti locali. E' sicura, vero?\n\nSite: [http://nearby.challs.cyberhighschools.it:37005](http://nearby.challs.cyberhighschools.it:37005)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "header-injection"
+  ],
+  "order": 24,
+  "flags": [
+    "^flag\\{gl1_h3ader_p0ss0no_m3ntire\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://nearby.challs.cyberhighschools.it:37005/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

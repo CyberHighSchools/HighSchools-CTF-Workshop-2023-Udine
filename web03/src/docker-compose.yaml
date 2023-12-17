@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  baked:
+    build: src
+    ports:
+      - "3002:80"
+    restart: unless-stopped
+    environment:
+      FLAG: "flag{i_s3gret1_n0n_son0_p3r_s3mpr3}"
+      KEY: "SEGR3T0"

@@ -1,0 +1,30 @@
+{
+  "title": "Ultra Up-to-date Encoding",
+  "description": "Ho inviato questa flag ai miei amici tramite email, ma il mio client ha utilizzato una codifica obsoleta per l'allegato.\n\nNessuno \u00e8 riuscito a leggerlo, puoi farlo tu?",
+  "authors": [
+    "Matteo Paier <@MatteoPaier>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 35,
+  "flags": [
+    "^flag\\{perche_uuencode_se_abbiamo_mime\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "mail.pcap",
+      "type": "upload",
+      "path": "./attachments/mail.pcap",
+      "dynamic": false
+    }
+  ],
+  "hints": []
+}

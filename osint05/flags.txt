@@ -1,0 +1,4 @@
+flag{porta_san_genesio}
+flag{san_genesio}
+flag{porta_San_Genesio}
+flag{San_Genesio}

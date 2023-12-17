@@ -1,0 +1,35 @@
+{
+  "title": "Gallery",
+  "description": "A te piacciono i gatti?\nLa flag si trova in `/flag.txt`.\n\nSite: [http://gallery.challs.cyberhighschools.it](http://gallery.challs.cyberhighschools.it)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "path-traversal"
+  ],
+  "order": 25,
+  "flags": [
+    "^flag\\{suf1ng_th3_fil3syst3m\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://gallery.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

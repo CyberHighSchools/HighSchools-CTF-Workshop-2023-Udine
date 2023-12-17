@@ -1,0 +1,33 @@
+{
+  "title": "Tu quoque lusor, me intelligis?",
+  "description": "Sar\u00e0 abbastanza sicuro questo vecchio cifrario?\n\nQuesta \u00e8 una challenge remota. Collegati al seguente sito web:\n[http://caesar.challs.cyberhighschools.it](http://caesar.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 11,
+  "flags": [
+    "^flag\\{CESAREUSAVAUNCIFRARIOSIMILE\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://caesar.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

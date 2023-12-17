@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Pagina di registrazione</title>
+    <link rel="stylesheet" href="/static/css/forms.css">
+</head>
+
+<body>
+    <div class="card">
+        {% if error %}
+        <div class="error">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+        <form method="POST" action="/register">
+            <label class="form-item" for="username">Nome utente</label>
+            <input class="form-item" type="text" name="username" placeholder="username" />
+            <label class="form-item" for="password">Password</label>
+            <input class="form-item" type="password" name="password" placeholder="*******" />
+            <input class="form-item box" type="submit" value="Registrati" />
+        </form>
+        <a href="/login">Clicca qui per accedere</a>
+    </div>
+</body>
+
+</html>

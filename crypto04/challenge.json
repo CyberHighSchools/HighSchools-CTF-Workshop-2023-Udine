@@ -1,0 +1,33 @@
+{
+  "title": "LCG giocattolo",
+  "description": "Una buona introduzione all'aritmetica modulare \u00e8 necessaria se vuoi entrare nel mondo della crittografia.\n\nQuesta \u00e8 una challenge remota. Collegati al seguente sito web:\n[http://lcg.challs.cyberhighschools.it](http://lcg.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 14,
+  "flags": [
+    "^flag\\{s3mpl1c3_m4t3m4t1c4\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://lcg.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Notes",
+  "description": "Una semplice app per ricordarsi le cose.\n\nSite: [http://notes.challs.cyberhighschools.it](http://notes.challs.cyberhighschools.it)",
+  "authors": [
+    "Stefano Pessotto <@peszr>"
+  ],
+  "tags": [
+    "web"
+  ],
+  "hiddenTags": [
+    "idor"
+  ],
+  "order": 26,
+  "flags": [
+    "^flag\\{c0ntroll0_acc3s5i_IDOR\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [
+    {
+      "name": "app.py",
+      "type": "upload",
+      "path": "./attachments/app.py",
+      "dynamic": false
+    }
+  ],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://notes.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

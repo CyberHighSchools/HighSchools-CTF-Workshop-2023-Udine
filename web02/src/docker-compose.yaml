@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  noalogin:
+    build: src
+    ports:
+      - "3001:80"
+    restart: unless-stopped
+    environment:
+      FLAG: "flag{aut3nticazione_l4t0_cl1ent??}"
+      ADMIN_USERNAME: "admin"
+      ADMIN_PASSWORD: "unguessable_password_123"

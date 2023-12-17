@@ -1,0 +1,19 @@
+body {
+    background-color: #edecec;
+}
+.box {
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10vh 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form-item {
+    margin: 10px 0px;
+}

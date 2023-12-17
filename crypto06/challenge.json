@@ -1,0 +1,33 @@
+{
+  "title": "L'oracolo dello XOR",
+  "description": "Ehi, sei tu che stai cercando di attaccarmi? Forse non avrei dovuto lasciarti a disposizione il mio oracolo...\n\nQuesta \u00e8 una challenge remota. Collegati al seguente sito web:\n[http://xororacle.challs.cyberhighschools.it](http://xororacle.challs.cyberhighschools.it)",
+  "authors": [
+    "Luca Campa <@campa1102>"
+  ],
+  "tags": [
+    "crypto"
+  ],
+  "hiddenTags": [],
+  "order": 16,
+  "flags": [
+    "^flag\\{qu3st0_0r4c0l0_c1_d4_m0lti_sugg3r1m3nti\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": [],
+  "endpoint": {
+    "type": "http",
+    "url": "http://xororacle.challs.cyberhighschools.it:80/"
+  },
+  "checker": {
+    "enabled": true,
+    "config": {
+      "timeout": 10
+    }
+  }
+}

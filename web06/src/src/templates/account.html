@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title>Pagina di {{ user['username'] }}</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1 class="title">Account di {{ user['username'] }}</h1>
+        <p class="little">Tipo: {% if user['is_admin'] %} amministratore {% else %} utente {% endif %}</p>
+        <form method="POST">
+            <label class="form-item form-title">Crea un post</label>
+            <label class="form-item" for="content">Contenuto</label>
+            <input class="form-item" type="text" name="content" placeholder="Scrivi qui" />
+            <input class="form-item box" type="submit" value="Posta" />
+        </form>
+        <div class="posts">
+            {% for post in posts %}
+            <p class="post">{{ post }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

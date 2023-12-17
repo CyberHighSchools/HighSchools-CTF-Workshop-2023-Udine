@@ -1,0 +1,23 @@
+{
+  "title": "Negozio Segreto - lvl 2",
+  "description": "Qualcuno ha trovato il nostro segretissimo negozio di flag! Fortunatamente abbiamo catturato tutto il traffico rilevante.\n\nPuoi aiutarci a capire cosa hanno trovato?\n\nWow, avevamo dimenticato un messaggio segrato nella pagina! Speriamo che l'attaccante non sia riuscito a decifrarlo.\n\n_La cattura \u00e8 la stessa della challenge precedente._",
+  "authors": [
+    "Matteo Paier <@MatteoPaier>"
+  ],
+  "tags": [
+    "network"
+  ],
+  "hiddenTags": [],
+  "order": 32,
+  "flags": [
+    "^flag\\{questo_e_diventato_reverse_engineering\\}$"
+  ],
+  "scoring": {
+    "type": "dynamic",
+    "start": 500,
+    "stop": 50,
+    "decay": "50%"
+  },
+  "files": [],
+  "hints": []
+}

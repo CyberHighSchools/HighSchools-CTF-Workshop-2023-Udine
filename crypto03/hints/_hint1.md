@@ -1,0 +1,1 @@
+La permutazione è un'operazione invertibile
